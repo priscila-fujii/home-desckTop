@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+:root {
+    --cor-de-Fundo: #a6e5c8;
+    --cor-de-Teste: #ffe478;
+}
+
+body {
+    background: var(--cor-de-Fundo);
+}
