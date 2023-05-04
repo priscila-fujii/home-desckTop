@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body class="corpo">
     <h1>Olá mundo!</h1>
-    <input type="submit" onclick= " setTimeout() "/>
-    <script src="script/last.js"></script>
-        
+    <script>
+        let corpoDoc = document.querySelector('.corpo');
+        let docCreator = document.createElement('p');
+        let tagH1 = document.getElementById("h1").style.color = '#ffe478';
+        function demorar() {
+            docCreator.textContent = "Novo Mundoooo";
+            corpoDoc.appendChild(docCreator);
+        }
+        setTimeout(demorar, 6000);
+    </script>
+
 </body>
+
 </html>
 <!--
     https://www.w3schools.com/js/js_htmldom_css.asp
